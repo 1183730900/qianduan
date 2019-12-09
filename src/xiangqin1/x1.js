@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './../Header/header';
 import { Editor } from 'react-draft-wysiwyg';
 import _isEmpty from 'lodash/isEmpty';
-import '../../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 var HeaderCss = require('./../Header/header.css')
 var HomePageCss = require('./homePage.css')
 export default class xiangqin2 extends React.Component {
