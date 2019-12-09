@@ -1,0 +1,55 @@
+.allbord{
+    height: 100%;
+    width: 100%;
+}
+.bord1{
+    border:solid 1px greenyellow;
+    height: 40px;
+    background-color: azure;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 0 20px; */
+    border-right: none;
+    border-left: none;
+}
+.bord2{
+    border:solid 1px greenyellow;
+    height: 40px;
+    background-color: rgba(124, 168, 53, 0.048);
+    border-top: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 0 20px; */
+    border-right: none;
+    border-left: none;
+}
+.bord3{
+    border:solid 1px greenyellow;
+    height: 40px;
+    background-color: azure;
+    border-top: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-right: none;
+    border-left: none;
+}
+.check{
+    height: 20px;
+    width: 20px;
+}
+.wu{
+    width: 30px;
+}
+.lastbtn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+}
+.page{
+    text-align: center;
+    
+}

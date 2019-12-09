@@ -1,0 +1,84 @@
+.header{
+    height: 30px;
+    border: groove rgba(173, 173, 173, 0.404);
+    border-top: none;
+    border-right: none;
+    /* background: rgba(1, 8, 71, 0.918); */
+    clear: both;
+    display: block;
+    content: " ";
+}
+.a1{
+    clear: both;
+    display: block;
+    content: " ";
+}
+.a2{
+    float: right;
+    clear: both;
+    display: block;
+    content: " ";
+}
+.a3{
+    float: right;
+    margin:0px 5px ;
+    text-decoration: none;
+}
+
+.a5{
+    text-decoration: none;
+    font-family:"叶根友刀锋黑草";
+    font-size: 22px;
+    color: rgba(56, 143, 150, 0.719); 
+    margin: 0 0 0 50%;
+}
+.a6{
+margin: 0 10px;
+}
+.a7{
+    text-align:center;
+    line-height:100%;
+    padding:0.3em;
+    font:16px Arial,sans-serif bold;
+    font-style:normal;
+    text-decoration:none;
+    margin:2px;
+    vertical-align:text-bottom;
+    zoom:1;
+    outline:none;
+    font-size-adjust:none;
+    font-stretch:normal;
+    border-radius:50px;
+    box-shadow:0px 1px 2px rgba(0,0,0,0.2);
+    text-shadow:0px 1px 1px rgba(0,0,0,0.3);
+    color:#fefee9;
+    border:0.2px solid #2299ff;
+    background-repeat:repeat;
+    background-size:auto;
+    background-origin:padding-box;
+    background-clip:padding-box;
+    background-color:#087df3;
+    background: linear-gradient(to bottom, #eeeff9 10%,#3399ff 100%);
+}
+.a7:hover{
+    background: #268DFF;
+}
+.a4{
+    float: left;
+    height: 30px;
+    width: 30px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 50%;
+    background-image: url(./../Header/touxiang.jpg); 
+    background-color: rgba(0, 255, 255, 0.623);
+    clear: both;
+    display: block;
+    content: " ";
+}
+.b{
+    float: left;
+    height: 30px;
+    width: 30px;
+    margin: 0px 10px 0px 0px;
+    
+}

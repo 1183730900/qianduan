@@ -1,0 +1,162 @@
+.top1{
+    width: 100%;
+    height: 135px;
+}
+.bg1{
+    height: 1000px;
+    background-image: url(./4.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+.page1{
+    width: 40%;
+    height: 95%;
+    /* border-radius: 100%; */
+    position: relative;
+    top: 85px;
+    float: left;
+    margin: 0 30%;
+    /* background-image: url('../picture/3.jpg'); */
+    background-color: rgba(180, 233, 198, 0.37);
+    /* background-color: aqua;
+    position: absolute;
+    top:185px;
+    width: 1000px;
+    height: 500px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    /* padding: 10px 50px 20px 50px; */
+    /* overflow: hidden;
+    box-sizing: boder-box;
+    padding: 10px 20px 10px 20px;
+    float: left;
+    margin: 0 16%; */
+} 
+.font1{
+    font-size: 20px;
+    float: left;
+    margin: 10px 47%;
+    
+}
+.sign{
+    font-size: 15px;
+    float: left;
+    margin: 62px -620px;
+    text-align: center;
+}
+
+.ID{
+    float: left;
+    margin: 10px -550px;
+    font-size: 25px;
+}
+.test{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+.HeadPhoto{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url('1.jpg');
+    background-size: 100%;
+    position: relative;
+    /* left: 150px; */
+    top: 30px;
+}
+.changefont1{
+    font-size: 35px;
+    position: relative;
+    top: 20px;
+}
+.changefont2{
+    font-size: 20px;
+    position: relative;
+    /* right: 200px; */
+    top: 20px;
+}
+.changefont3{
+    font-family: "经典行书简";
+    position: relative;
+    top: 60px;
+    font-size: 20px;
+    /* s */
+}
+.list{
+    display: flex;
+    display:-webkit-flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 75px;
+    
+}
+.message{
+    
+    width: 70%;
+    float: left;
+    margin: -50px auto;
+    text-align: center;
+    font-size: 16px;
+}
+.message1{
+    box-sizing: border-box;
+  text-align:center;
+  font-size:1.4em;
+  height:2.7em;
+  border-radius:4px;
+  border:1px solid #c8cccf;
+  color:#6a6f77;
+  -web-kit-appearance:none;
+  -moz-appearance: none;
+  display:block;
+  outline:0;
+  padding:0 1em;
+  text-decoration:none;
+  width:70%;
+  float: left;
+  margin: 0 100px;
+}
+.changefont4{
+    font-size: 30px;
+    
+}
+.message2{
+    width: 50%;
+    text-align: left;
+    /* padding: 0 35%; */
+}
+.newfix{
+    height: 570px;
+    
+}
+.jump{
+    float: right;
+    margin: 0 40px;
+    text-decoration: none;
+    color: #fbfdff;
+}
+.set{
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-image: url('./Settings.png');
+    float: right;
+    margin: 4px;
+}
+.a1{
+    position: absolute;
+    left: 5px;
+    top: 30px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #fbfdff;
+}

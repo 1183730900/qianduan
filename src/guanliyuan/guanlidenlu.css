@@ -1,0 +1,49 @@
+
+.login{
+    
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin: -150px 0 0 -150px;
+    width: 300px;
+    height: 300px;
+}
+
+.h1{
+    color: rgb(99, 135, 236);
+    text-shadow:0 0 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 2em;
+    margin: 0.67em 0;  
+}
+
+.but{
+    width:300px;
+    min-height: 20px;
+    display: block;
+    background-color: #2160dd;
+    border: 1px solid #000613;
+    color: rgb(240, 234, 234);
+    padding: 9px 14px;
+    font-size: 15px;
+    line-height: normal;
+    border-radius: 5px;
+    margin: 0.90em 0;
+    text-decoration: none;
+}
+.a1{
+    margin: -150px 0 0 170px;
+    text-decoration: none;
+   
+}
+.input{
+    margin: 20px 0 0 0 ;
+}
+.b1{
+    height: 100%;
+    width: 100%;
+    background-image: url(./../geren/guanli/11.PNG);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

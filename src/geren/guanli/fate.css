@@ -1,0 +1,31 @@
+.a1{
+    height: 958px;
+    background: rgba(255, 255, 255, 0.486);
+    clear: both;
+    display: block;
+    content: " ";
+}
+.b3{
+    float: left;
+    width: 98px;
+}
+.c1{
+    float: left;   
+}
+.b1{
+    float: left;
+    width: 80%;
+    clear: both;
+    display: block;
+    content: " ";
+    margin: 5% 10%
+}
+.b2{
+float: left;
+width: 80%;
+margin: 10% 10%;
+}
+.c3{
+    float: right;
+    margin: 10px 0;
+}

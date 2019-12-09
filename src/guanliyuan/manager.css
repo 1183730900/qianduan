@@ -1,0 +1,147 @@
+.bgpicture{
+    height: 100%;
+    width: 100%;
+    /* background-image: url('../picture/5.jpg'); */
+    background-size: 100% 100%;
+    color: brown;
+}
+
+.title{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    /* background-color: aqua; */
+    position: relative;
+    left: 60px;
+}
+.managerphoto{
+    height: 300px;
+    width: 15%;
+    /* border-radius: 70%; */
+    float: left;
+    /* background-image: url('../picture/manager.jpg'); */
+    background-size: 100% 100%;
+    margin: -10px 0;
+    /* background-color: rgba(10, 121, 248, 0.63); */
+}
+.function{
+    float: right;
+    height: 150px;
+    width: 1240px;
+    border: solid 1px greenyellow;
+    border-collapse: collapse 50%;
+}
+.title1{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 10px;
+}
+.memberHead{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    /* background-image: url(../picture/head1.jpg); */
+    background-size: 100% 100%;
+}
+.allarticle{
+    height: 95px;
+    /* padding: 10px 30px; */
+    text-align: left;
+    text-indent: 2em;
+}
+.article{
+    padding: 0 35px;
+    height: 50px;
+    
+}
+.function1{
+    float: right;
+    color: yellowgreen;
+}
+.bor5{
+    float: right;
+    height: 150px;
+    width: 1240px;
+    border: solid 1px greenyellow;
+    border-top: none;
+    border-right: none;
+}
+.allleft{
+    float: right;
+    width: 84%;
+    display: flex;
+    height: 100%;
+}
+.left1{
+    /* border: solid 1px greenyellow;
+    border-bottom: none; */
+    float: left;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    margin: 0 20px;
+    color: blue;
+    font-size: 20px;
+}
+.left2{
+    color: blue;
+    font-size: 20px;
+}
+.bigborder{
+    height: 100%;
+    width: 90%;
+    float: right;
+    margin: 0 5%;
+}
+.ad1{
+    width: 15%;
+    height: 460px;
+    float: left;
+    position: absolute;
+    top: 400px;
+}
+.ad2{
+    /* border: solid 1px greenyellow; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.ad3{
+    height: 300px;
+    padding: 0 20px;
+    text-align: left;
+    text-indent: 2em;
+}
+
+#components-layout-demo-side .logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+    overflow: hidden;
+  }
+  .logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+    overflow: hidden;
+  }
+  .head{
+      overflow: hidden;
+      text-align: center;
+      font-size: 30px;
+      font-family: 'Courier New', Courier, monospace;
+      color:brown;
+  }
+  .date{
+      display: flex;
+      justify-content: space-evenly;
+
+  }

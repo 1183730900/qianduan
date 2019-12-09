@@ -1,0 +1,141 @@
+.bgpicture{
+    height: 100%;
+    width: 100%;
+    /* background-image: url('../picture/5.jpg'); */
+    background-size: 100% 100%;
+    color: brown;
+}
+
+.title{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    /* background-color: aqua; */
+    position: relative;
+    left: 60px;
+}
+.managerphoto{
+    height: 300px;
+    width: 270px;
+    /* border-radius: 70%; */
+    float: left;
+    /* background-image: url('../picture/manager.jpg'); */
+    background-size: 100% 100%;
+    margin: -10px 0;
+    /* background-color: rgba(10, 121, 248, 0.63); */
+}
+.function{
+    float: right;
+    height: 110px;
+    width: 100%;
+    border: solid 1px greenyellow;
+    border-collapse: collapse 50%;
+    border-left: none;
+}
+.title1{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 3px;
+}
+.memberHead{
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    overflow: hidden;
+    /* background-image: url(../); */
+    
+    background-size: 100% 100%;
+}
+.allarticle{
+    height: 95px;
+    /* padding: 10px 30px; */
+    text-align: left;
+    text-indent: 2em;
+}
+.article{
+    padding: 0 35px;
+    height: 40px;
+    
+}
+.function1{
+    float: right;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bor5{
+    float: right;
+    height: 110px;
+    width: 100%;
+    border: solid 1px greenyellow;
+    border-top: none;
+    border-right: none;
+    background-color: rgba(124, 168, 53, 0.048);
+    border-left: none;
+}
+.bor6{
+    float: right;
+    height: 110px;
+    width: 100%;
+    border: solid 1px greenyellow;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.allleft{
+    width: 80%;
+    display: flex;
+
+}
+.left1{
+    /* border: solid 1px greenyellow;
+    border-bottom: none; */
+    float: left;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    margin: 0 20px;
+    color: blue;
+    font-size: 20px;
+}
+.lef00000000t2{
+    color: blue;
+    font-size: 20px;
+}
+.bigborder{
+    height: 100%;
+    width: 82%;
+    float: right;
+}
+.ad1{
+    width: 272px;
+    height: 100%;
+    float: left;
+}
+.ad2{
+    /* border: solid 1px greenyellow; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.ad3{
+    height: 100%;
+    padding: 0 20px;
+    text-align: left;
+    text-indent: 2em;
+}
+.mostborder{
+    width: 100%;
+    height: 100%;
+}
+.page{
+    text-align: center;
+    
+}

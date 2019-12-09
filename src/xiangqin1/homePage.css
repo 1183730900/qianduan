@@ -1,0 +1,106 @@
+.homePage{
+    width: 80%;
+    height: 914px;
+    overflow: scroll;
+    margin: 0% 10%;
+}
+.homePage::-webkit-scrollbar{
+    display: none;
+}
+.bor1{
+    height: 300px;
+    width: 100%;
+    border:solid 2px #979393;
+    /* float: right; */
+    border-top: none;
+    text-align: center;
+    background-color: #ffb7b74f;
+    border-left: none;
+    
+}
+.bor2{
+    height: 30px;
+    width: 100%;
+    border: solid 2px #979393;
+    border-top: none ;
+    /* float: right; */
+    border-left: none;
+
+}
+.bor3{
+    height: 200px;
+    width: 100%;
+    border: solid 2px #979393;
+    border-top: none;
+    /* float: right; */
+    text-align: center;
+    overflow: hidden;
+    padding: 0px 0px;
+    background-color: #ffb7b74f;
+    border-left: none;
+
+}
+.bor4{
+    height: 150px;
+    width: 80%;
+    float: left;
+    margin: 24px 20px 24px 100px;
+    border: solid 1px greenyellow;
+    text-align: start;
+    resize: none;
+    
+}
+.answer1{
+    font-size: 20px;
+}
+.picture{
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    overflow: hidden;
+    float: left;
+    margin: 1px 0 0 300px;
+    background-image: url('./../Header/touxiang.jpg')
+    
+}
+.question1{
+    width: 100%;
+    height: 200px;;
+    font-size: 10px;
+    float: left;
+    margin: 10px 0px ;
+    overflow: scroll;
+    /* overflow: hidden; */
+}
+.question1::-webkit-scrollbar{
+    display: none;
+}
+.fix{
+    float: right;
+    margin: 0 230px 0 200px;
+}
+.fix2{
+    float: left;
+    margin: 150px 0;
+}
+.return{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;  
+    background-image: url('./1.jpg');
+    position: absolute;
+    left: 0px;
+}
+.b3{
+    width: 90%;
+    margin: 0% 5%;
+}
+.bor5{
+    height: 380px !important;
+   border: 1px solid #F1F1F1 !important;
+   padding: 5px !important;
+   border-radius: 2px !important;
+
+
+}

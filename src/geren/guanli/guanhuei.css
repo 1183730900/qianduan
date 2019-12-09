@@ -1,0 +1,54 @@
+.c2{
+
+    height: 130px;
+    width: 100%;
+}
+
+.a1{
+    
+    height: 956px;
+    width: 100%;
+    background: rgba(226, 221, 221, 0.26);
+    clear: both;
+    display: block;
+    content: " ";
+    overflow: scroll;
+}
+.a1::-webkit-scrollbar{
+    display: none;
+}
+.b1{
+    height: 150px;
+
+}
+.c1{
+    height: 30px;
+    border-bottom: solid 2px rgba(211, 197, 197, 0.644);
+}
+.e1{
+    color: rgb(224, 210, 210);
+    width: 80%;
+    margin: 0px 10%;
+    line-height: normal;
+}
+.d1{
+    height: 120px;
+    overflow: hidden;
+    border-bottom:  solid 2px rgba(211, 197, 197, 0.644);
+    line-height: normal;
+}
+.f1{
+    color: rgb(224, 213, 213);
+    float: left;
+    margin: 0px 14%; 
+}
+.f2{
+    color: rgb(224, 213, 213);
+    float: left;
+    margin: 0px 2.5%;
+}
+.f3{
+    color: rgb(224, 213, 213);
+    float: left;
+    margin: 0px 14%;
+}

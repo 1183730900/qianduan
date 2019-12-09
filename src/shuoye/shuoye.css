@@ -1,0 +1,60 @@
+.b1{
+    height: 100%;
+    width: 100%;
+    overflow: none;
+    /* background-color: #250b97; */
+
+}
+.b2{
+    /* background: #b14d4d; */
+    float: left;
+    width: 10%;
+    height: 929px;
+    /* background: #755dcc; */
+    background-color: #020b33;
+}
+.b4{
+    height: 923px;
+    width: 100%;
+    overflow: none;
+    /* background-color: #250b97; */
+    
+}
+.c1{
+
+    text-decoration: none;
+    font-family:"叶根友刀锋黑草";
+    color: rgb(255, 255, 255);
+}
+.b3{
+    /* background: rgb(41, 25, 99); */
+    float: left;
+    width: 75%;
+    height: calc(100%-10px);
+    /* background-color: brown; */
+    /* background-image: url('./../geren/guanli/3.PNG'); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0 0% 0 7.5%;
+}
+.c2{
+    color: rgb(255, 255, 255);
+    font-family:"叶根友刀锋黑草";
+    text-decoration: none;
+
+}
+.d1{
+    border: solid 2px #7c7c7c;
+    height: 100%;
+    border-top:none; 
+    border-bottom:none; 
+    /* background-color: brown; */
+
+}
+.c3{
+    float: right;
+    width: 82%;
+    text-decoration: none;
+    font-family:"叶根友刀锋黑草";
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,65 @@
+.a1{
+    height: 100%;
+    width: 100%;
+    background: rgba(226, 221, 221, 0.26);
+    clear: both;
+    display: block;
+    content: " ";
+
+}
+.b1{
+    height: 20px;
+    width: 80%;
+    margin: 0px 10%;
+    border: solid 2px rgb(209, 196, 196);
+    border-top: none;
+}
+.c1{
+    color: rgb(224, 213, 213);
+    float: left;
+    margin: 0px 14%;
+    /* border-bottom: solid 1px rgb(202, 196, 196) */
+}
+.c2{
+    color: rgb(224, 213, 213);
+    float: left;
+
+}
+.c21{
+    color: rgb(224, 213, 213);
+    float: left;
+    margin: 0px 2.5%;
+}
+.c3{
+    color: rgb(224, 213, 213);
+    float: left;
+    margin: 0px 14%;
+}
+.c4{
+
+    float: left;
+
+}
+.c41{
+    float: left;
+    color: rgb(224, 213, 213);
+}
+.b2{
+    width: 80%;
+    margin: 20px 10%;
+    border: solid 2px rgba(209, 196, 196, 0.685) ;
+    /* border-top: none; */
+    height: 896px;
+    overflow: scroll;
+}
+.b3::-webkit-scrollbar{
+    display: none;
+}
+.b2::-webkit-scrollbar{
+    display: none;
+}
+.b3{
+    overflow: scroll;
+    height: 936px;
+    width: 100%;
+}
