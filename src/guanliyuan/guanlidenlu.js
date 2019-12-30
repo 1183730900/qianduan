@@ -1,6 +1,7 @@
 import React from 'react';
-import { Input, Tooltip } from 'antd';
-var loginCss = require('./login.css');
+import { Input, Tooltip, message } from 'antd';
+import Axios from 'axios';
+var loginCss = require('./guanlidenlu.css');
 export default class Login extends React.Component {
     constructor(props) {
         super(props)
@@ -43,9 +44,9 @@ export default class Login extends React.Component {
             data:JSON.stringify(data)
         }).then(result=>{
             if (result.state==2) {
-                message.info("登录失败")
+                message.info('登录失败')
             }else if(result.state==1){
-                message.info("登录成功")
+                message.info('欢迎管理员')
                 this.props.history.push('/guanliyuan/tezi')
             }
         })

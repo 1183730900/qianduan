@@ -16,7 +16,7 @@ import xiangqin6 from './xiangqin1/x5';
 import xiangqin7 from './xiangqin1/x6';
 import xiangqin8 from './xiangqin1/x7';
 import fabu from './geren/fabu';
-import manager from './guanliyuan/manager';
+import manager from './guanliyuan/guanlidenlu';
 var ShuoyeCss = require('./shuoye/shuoye.css')
 class Indexpage extends React.Component {
     render() {

@@ -1,14 +1,11 @@
 import React from 'react';
-import { Input, Tooltip } from 'antd';
+import { Input, Tooltip, message } from 'antd';
 import Axios from 'axios';
 var loginCss = require('./login.css');
 export default class Login extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {
-            username: "",
-            password: "",
-        }
+        this.state = { }
     }
     changeValue = e => {
         this.setState({
@@ -44,9 +41,11 @@ export default class Login extends React.Component {
             data:JSON.stringify(data)
         }).then(result=>{
             if (result.state==2) {
-                alert('登录失败')
+                message.info('登录失败')
+            }else if(result.state==3){
+                message.info('用户不存在')
             }else if(result.state==1){
-                alert('登录成功');
+                message.info('登录成功');
                 this.props.history.push('/shuoye')
             }
         })
@@ -57,8 +56,8 @@ export default class Login extends React.Component {
                 <div className={loginCss.login}>
                     <h1 className={loginCss.h1}>用户登录</h1>
                     <form method="post">
-                    <Input placeholder="用户名" name="username" id="username" value={this.state.username} onChange={e=>this.changeValue} className={loginCss.input1} />
-                    <Input.Password placeholder="密码" name="password" id="password" value={this.state.password} onChange={e=>this.changeValue} className={loginCss.input2} />
+                    <Input placeholder="用户名" name="username" id="username" value={this.state.username} onChange={this.changeValue} className={loginCss.input1} />
+                    <Input.Password placeholder="密码" name="password" id="password" value={this.state.password} onChange={this.changeValue} className={loginCss.input2} />
                         <button className={loginCss.but} onClick={this.login}>登录</button>
                         <a href="./../zhuce" className={loginCss.a1}>没有账号，请注册</a>
                         <a href="./../shuoye" className={loginCss.a2}>返回首页</a>
