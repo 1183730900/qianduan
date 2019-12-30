@@ -1,6 +1,37 @@
 import React from 'react';
+import Axios from 'axios';
+import { message } from 'antd';
 var registerCss = require('./register.css');
 export default class Register extends React.Component {
+    constructor(props){
+        super(props);
+        this.state={
+        }
+    }
+    changeValue=(e)=>{
+        this.setState({
+            [e.target.name]:e.target.value
+        })
+    }
+    upload=()=>{
+        var data={
+            "username":this.state.username,
+            "password":this.state.password,
+            // "userRePassword":this.state.userRePassword,
+            "userEmail":this.state.userEmail,
+            "userPhone":this.state.userPhone,
+        }
+        Axios.post({
+            url:"/user/ChaRu",
+            data:JSON.stringify(data)
+        }).then(result=>{
+            if (result.state==2) {
+                alert.info("用户名已存在")
+            }else if(result.state==1){
+                alert.info("注册成功")
+            }
+        })
+    }
     render() {
         return (
             <div className={registerCss.H}>
@@ -13,48 +44,33 @@ export default class Register extends React.Component {
                             <span className={registerCss.b}>*</span>
                             <label for="username">用户名</label>
                             <div className={registerCss.h4}>
-                                <input type="text" className={registerCss.h5} name="username" placeholder="请输入用户名 长度:6-12个字符" />
+                                <input type="text" className={registerCss.h5} name="username" value={this.state.username} onChange={e=>this.changeValue(e)} placeholder="请输入用户名 长度:6-12个字符" />
                             </div>
                         </div>
                         <div className={registerCss.a1}>
                             <span className={registerCss.b}>*</span>
-                            <label for="userPassword">密码</label>
+                            <label for="password">密码</label>
                             <div className={registerCss.a2}>
-                                <input type="password" className={registerCss.aa} name="userPassword" placeholder="请输入密码 长度:6-12个字符" />
-                            </div>
-                        </div>
-                        <div className={registerCss.a3}>
-                            <span className={registerCss.b}>*</span>
-                            <label for="userRePassword">确认密码</label>
-                            <div className={registerCss.a4}>
-                                <input type="password" className={registerCss.a5} name="userRePassword" placeholder="请重复输入密码" />
+                                <input type="password" className={registerCss.aa} name="password"  value={this.state.password} onChange={e=>this.changeValue(e)} placeholder="请输入密码 长度:6-12个字符" />
                             </div>
                         </div>
                         <div className={registerCss.c1}>
                             <span className={registerCss.b}>*</span>
-                            <label for="userPhone">手机号码</label>
+                            <label for="phonenumber">手机号码</label>
                             <div className={registerCss.c2}>
-                                <input type="text" className={registerCss.c3} name="userPhone" placeholder="请输入您的手机号码，11位有效数字" />
+                                <input type="text" className={registerCss.c3} name="phonenumber"  value={this.state.phonenumber} onChange={e=>this.changeValue(e)} placeholder="请输入您的手机号码，11位有效数字" />
                             </div>
                         </div>
 
                         <div className={registerCss.d1}>
                             <span className={registerCss.b}>*</span>
-                            <label for="userEmail">电子邮箱</label>
+                            <label for="email">电子邮箱</label>
                             <div className={registerCss.d2}>
-                                <input type="text" className={registerCss.d3} name="userEmail" placeholder="请输入您的邮箱地址，如：123@qq.com" />
+                                <input type="text" className={registerCss.d3} name="email"  value={this.state.email} onChange={e=>this.changeValue(e)} placeholder="请输入您的邮箱地址，如：123@qq.com" />
                             </div>
                         </div>
-                        <div className={registerCss.e1}>
-                            <span className={registerCss.b}>*</span>
-                            <label for="userGender">性别</label>
-                            <div className={registerCss.e2}>
-                                <input type="radio" id="userGender_01" name="userGender" value="0" checked="checked" />男
-						<input type="radio" id="userGender_02" name="userGender" value="1" />女
-					</div>
-                        </div>
                         <div className={registerCss.f}>
-                            <input className={registerCss.f1} type="submit" value="注册"></input>
+                            <input className={registerCss.f1} type="submit" onClick={this.upload()} value="注册"></input>
                         </div>
                         <div className={registerCss.g}>
                             <a href="./../denlu" className={registerCss.g5}>已有账号？去登录</a>

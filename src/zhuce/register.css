@@ -30,7 +30,7 @@
     width: 420px;
     height: 40px;
     line-height: 40px;
-    margin-top:100px;
+    margin-top:200px;
     margin-left:180px;
     font-weight: 700;
 }
@@ -49,7 +49,7 @@
     width: 420px;
     height: 40px;
     line-height: 40px;
-    margin-top:180px;
+    margin-top:280px;
     margin-left:180px;
     font-weight: 700;
 }
@@ -63,31 +63,13 @@
     border: 2px solid #ccc;
     border-radius: 5px;
 }
-.a3{
-    position: absolute;
-    width: 420px;
-    height: 40px;
-    line-height: 40px;
-    margin-top:260px;
-    margin-left:180px;
-    font-weight: 700;
-}
-.a4{
-    display: inline-block;
-    margin-left: 28px;
-}
-.a5{
-    height: 35px;
-    width: 290px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-}
+
 .c1{
     position: absolute;
     width: 420px;
     height: 40px;
     line-height: 40px;
-    margin-top:340px;
+    margin-top:350px;
     margin-left:180px;
     font-weight: 700;
 }
@@ -134,9 +116,7 @@
     display: inline-block;
     margin-left: 62px;
 }
-.b{
-    color: red;
-}
+
 .f{
     position:absolute;
     width: 80px;
