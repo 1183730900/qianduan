@@ -4,7 +4,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Shuoye from './shuoye/shuoye'
 import { BrowserRouter, Route, Switch, Redirect ,withRouter} from 'react-router-dom'
-import denlu from './denlu/login';
+import login from './denlu/login';
 import geren from './geren/geren';
 import Register from './zhuce/register'
 import xiangqin1 from './xiangqin1/xiangqin';
@@ -17,6 +17,7 @@ import xiangqin7 from './xiangqin1/x6';
 import xiangqin8 from './xiangqin1/x7';
 import fabu from './geren/fabu';
 import manager from './guanliyuan/guanlidenlu';
+import xiugai from './xiugaimima/xiugai'
 var ShuoyeCss = require('./shuoye/shuoye.css')
 class Indexpage extends React.Component {
     render() {
@@ -25,7 +26,7 @@ class Indexpage extends React.Component {
                 <BrowserRouter>
                     <Switch>
                         <Route path="/shuoye/xiaoyuan" component={Shuoye}></Route>
-                        <Route path="/denlu" component={denlu}></Route>
+                        <Route path="/Login" component={login}></Route>
                         <Route path="/zhuce" component={Register}></Route>                        
                         <Route path="/xiaoyuan/xiangqin" component={xiangqin1}></Route>
                         <Route path="/gaoshu/xiangqin" component={xiangqin2}></Route>
@@ -39,6 +40,7 @@ class Indexpage extends React.Component {
                         <Route path="/fabu/fate" component={fabu}></Route>
                         <Route path="/guanliyuan/tezi" component={manager}></Route>
                         <Route path="/denlu2" component={manager}></Route>
+                        <Route path="/xiugai" component={xiugai}></Route>
                         <Redirect to="/shuoye/xiaoyuan"></Redirect>
                     </Switch>
                 </BrowserRouter>

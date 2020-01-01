@@ -38,7 +38,7 @@ export default class Register extends React.Component {
                     <div className={registerCss.h2}>
                         <span>用户注册</span>
                     </div>
-                    <from action="#" method="post">
+                    <form  method="post">
                        <div>
                                <Input placeholder="用户名"  name="username" className={registerCss.a1}  value={this.state.username} onChange={e=>this.changeValue(e)}  />
                                <Input.Password placeholder="密码" className={registerCss.aa} name="userPassword"  value={this.state.userPassword} onChange={e=>this.changeValue(e)}  />
@@ -50,7 +50,7 @@ export default class Register extends React.Component {
                             <a href="./../denlu" className={registerCss.g5}>已有账号？去登录</a>
                         </div>
                             <a href="./../" className={registerCss.g6}>返回</a>
-                    </from>
+                    </form>
                 </div>
             </div>
         )

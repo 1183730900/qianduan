@@ -31,7 +31,7 @@ export default class Header extends React.Component {
             userProfile =
                 <div>
                     <Avatar icon="user"  className={HeaderCss.b}/>
-                    <Link to="/denlu" className={HeaderCss.a3}>登录</Link>
+                    <Link to="/Login" className={HeaderCss.a3}>登录</Link>
                     <Link to="/zhuce" className={HeaderCss.a3}>注册</Link>
                 </div>
         }

@@ -1,5 +1,5 @@
 
-.login{
+.B{
     
     position: absolute;
     top: 50%;
@@ -38,6 +38,10 @@
     float: right;
    
 }
+.input1{
+    float: left; 
+     margin: 20px 0 20px 0; 
+}
 .input2{
     float: left; 
      margin: 20px 0 20px 0; 
@@ -52,8 +56,4 @@
 .a2{
     text-decoration: none;
     float: left;
-}
-.a3{
-    position: absolute;
-    left: 30%;
 }

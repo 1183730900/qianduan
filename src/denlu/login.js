@@ -5,7 +5,7 @@ var loginCss = require('./login.css');
 export default class Login extends React.Component {
     constructor(props) {
         super(props)
-        this.state = { }
+        this.state = {}
     }
     changeValue = e => {
         this.setState({
@@ -34,7 +34,7 @@ export default class Login extends React.Component {
     login=()=>{
         var data={
             "username":this.state.username,
-            "password":this.state.password,
+            "userPassword":this.state.userPassword,
         }
         Axios.post({
             url:"/user/Login",
@@ -46,7 +46,7 @@ export default class Login extends React.Component {
                 message.info('用户不存在')
             }else if(result.state==1){
                 message.info('登录成功');
-                this.props.history.push('/shuoye')
+              
             }
         })
     }
@@ -57,9 +57,10 @@ export default class Login extends React.Component {
                     <h1 className={loginCss.h1}>用户登录</h1>
                     <form method="post">
                     <Input placeholder="用户名" name="username" id="username" value={this.state.username} onChange={this.changeValue} className={loginCss.input1} />
-                    <Input.Password placeholder="密码" name="password" id="password" value={this.state.password} onChange={this.changeValue} className={loginCss.input2} />
+                    <Input.Password placeholder="密码" name="userPassword" id="userPassword" value={this.state.userPassword} onChange={this.changeValue} className={loginCss.input2} />
                         <button className={loginCss.but} onClick={this.login}>登录</button>
                         <a href="./../zhuce" className={loginCss.a1}>没有账号，请注册</a>
+                        <a href="./../xiugai" className={loginCss.a3}>忘记密码？</a>
                         <a href="./../shuoye" className={loginCss.a2}>返回首页</a>
                     </form>
                 </div>
