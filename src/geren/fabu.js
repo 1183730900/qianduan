@@ -5,6 +5,7 @@ import guanfa from './guanli/guanfa';
 import guanhuei from './guanli/guanhuei';
 var FaBuCss = require('./fabu.css')
 export default class fabu extends React.Component {
+    
     render() {
         return (
             <div className={FaBuCss.a1}>

@@ -43,6 +43,38 @@ const options = [
     },
 ];
 export default class fate extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {}
+    }
+    changeValue =( e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    }
+    login=()=>{
+        var data={
+            "TID":this.state.TID,
+            "TSID":this.state.TSID,
+            "TReplyCount":this.state.TReplyCount,
+            "TTopic":this.state.TTopic,
+            "TContents":this.state.TContents,
+            "TTime":this.state.TTopic
+        }
+        Axios.post({
+            url:"/user/fate",
+            data:JSON.stringify(data),
+            'content-type': 'application/json'
+        }).then(result=>{
+            console.log(result.state);
+            if (result.state==2) {
+                message.info('发布失败')
+            }else if(result.state==1){
+                message.info('发布成功');
+              
+            }
+        })
+    }
     render() {
         return (
             <div className={FaTeCss.a1}>

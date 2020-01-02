@@ -1,6 +1,39 @@
 import React from 'react';
 var Information = require('./geren.css')
 export default class geren extends React.Component{
+    constructor(props) {
+        super(props)
+        this.state = {}
+    }
+    changeValue =( e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    }
+    xiugai=()=>{
+        var data={
+            "username":this.state.username,
+            "userBirthday":this.state.userBirthday,
+            "userAge":this.state.userAge,
+            "userBlood":this.state.userBlood,
+            "userLocal":this.state.userLocal,
+            "userSchool":this.state.userSchool,
+            "userEmail":this.state.userEmail,
+            "userPhone":this.state.userPhone
+        }
+        Axios.post({
+            url:"/user/xiugai",
+            data:JSON.stringify(data),
+        }).then(result=>{
+            console.log(result.state);
+            if (result.state==2) {
+                message.info('修改失败')
+            }else if(result.state==1){
+                message.info('修改成功');
+              
+            }
+        })
+    }
     render(){
        return(
            <div>
