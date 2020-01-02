@@ -16,14 +16,14 @@ export default class Login extends React.Component {
         })
     }
     // login = e => {
-    //     if (this.state.username == "123" && this.state.password == "123") {
+    //     if (this.state.adminAccount == "123" && this.state.adminPassword == "123") {
     //         alert('登录成功');
     //         window.localStorage.setItem("username", "123");
     //         window.localStorage.setItem("token", "11111")
     //         //跳转首页
     //         //history
     //         this.props.history.push('/shuoye')
-    //     } else if (this.state.username == "admin" && this.state.password == "111111") {
+    //     } else if (this.state.adminAccount == "admin" && this.state.adminPassword == "111111") {
     //         alert('欢迎管理员')
     //         window.localStorage.setItem("username", "admin");
     //         window.localStorage.setItem("token", "11111")

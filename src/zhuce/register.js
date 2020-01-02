@@ -23,6 +23,7 @@ export default class Register extends React.Component {
         Axios.post({
             url:"/user/ChaRu",
             data:JSON.stringify(data)
+            
         }).then(result=>{
             if (result.state==2) {
                 message.info("用户名已存在")

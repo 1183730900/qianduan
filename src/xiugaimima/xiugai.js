@@ -7,7 +7,7 @@ export default class Xiugai extends React.Component {
         super(props)
         this.state = {}
     }
-    changeValue = e => {
+    changeValue = (e) => {
         this.setState({
             [e.target.name]: e.target.value
         })
@@ -36,9 +36,9 @@ render() {
             <div className={xiugaiCss.B}>
                 <h1 className={xiugaiCss.h1}>找回密码</h1>
                 <form method="post">
-                <Input placeholder="用户名" name="username" id="username" value={this.state.username} onChange={this.changeValue} className={xiugaiCss.a1} />
-                <Input placeholder="手机号码" name="userPhone" id="userPhone" value={this.state.userPhone} onChange={this.changeValue} className={xiugaiCss.a2}/>
-                <Input.Password placeholder="密码" name="password" id="password" value={this.state.password} onChange={this.changeValue} className={xiugaiCss.a3} />
+                <Input placeholder="用户名" name="username" id="username" value={this.state.username} onChange={e=>this.changeValue(e)} className={xiugaiCss.a1} />
+                <Input placeholder="手机号码" name="userPhone" id="userPhone" value={this.state.userPhone} onChange={e=>this.changeValue(e)} className={xiugaiCss.a2}/>
+                <Input.Password placeholder="密码" name="password" id="password" value={this.state.password} onChange={e=>this.changeValue(e)} className={xiugaiCss.a3} />
                     <button className={xiugaiCss.but} onClick={this.xiugai}>确认修改</button>
                     <a href="./../shuoye" className={xiugaiCss.a2}>返回首页</a>
                 </form>

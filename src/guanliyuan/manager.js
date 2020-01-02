@@ -8,43 +8,12 @@ import 'antd/dist/antd.css';
 import { Pagination } from 'antd';
 import { DatePicker } from 'antd';
 import { Input } from 'antd';
+import zjguanliyuan from './zjguanliyuan';
 
 
 var ManagerCss = require('./manager.css');
 
-// export default class manager extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 <div className={ManagerCss.bgpicture}>
-//                     <div className={ManagerCss.title}>
-//                         管理页面
-//                     </div>
-//                     <div className={ManagerCss.managerphoto}></div>
-//                     <div className={ManagerCss.ad1}>
-//                         <p className={ManagerCss.ad2}>管理员公告</p>
-//                         <p className={ManagerCss.ad3}>请认真管理新闻，是一个汉语词语，意思有三种。其一指借助语言、文字、图片、录像等，向公众传播的消息。其二指社会上新近发生的事情。其三指新闻体裁。①借助语言、文字、图片、录像等，向公众传播的消息。具有现实性、时间性、公开性和连续性等特点，以及传递信息、宣传鼓...</p>
-//                     </div>
-                    //  <BrowserRouter basename='/guanliyuan'>
-                    //     <div className={ManagerCss.allleft}>
-                    //         <Link to="/tezi" className={ManagerCss.left1}>帖子管理</Link>
-                    //         <Link to="/renyuan" className={ManagerCss.left2}>人员管理</Link>
-                    //     </div>
 
-
-                    //     <div className={ManagerCss.bigborder}>
-                    //         <Switch>
-                    //             <Route path="/renyuan" component={people}></Route>
-                    //             <Route path="/tezi" component={post}></Route>
-                    //         </Switch>
-
-                    //     </div>
-                    // </BrowserRouter> 
-//                 </div>
-//             </div>
-//         )
-//     }
-// }
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 const { RangePicker } = DatePicker;
@@ -108,6 +77,9 @@ export default class SiderDemo extends React.Component {
                         <Switch>
                             <Route path="/renyuan" component={people}></Route>
                             <Route path="/tezi" component={post}></Route>
+                            <Route path="/zjguanliyuan" component={zjguanliyuan}></Route>
+                            <Route path="/scguanliyuan" component={zjguanliyuan}></Route>
+
                         </Switch>
                     </div>
             </Content>

@@ -7,7 +7,7 @@ export default class Login extends React.Component {
         super(props)
         this.state = {}
     }
-    changeValue = e => {
+    changeValue =( e) => {
         this.setState({
             [e.target.name]: e.target.value
         })
@@ -38,8 +38,10 @@ export default class Login extends React.Component {
         }
         Axios.post({
             url:"/user/Login",
-            data:JSON.stringify(data)
+            data:JSON.stringify(data),
+            'content-type': 'application/json'
         }).then(result=>{
+            console.log(result.state);
             if (result.state==2) {
                 message.info('登录失败')
             }else if(result.state==3){
@@ -56,8 +58,8 @@ export default class Login extends React.Component {
                 <div className={loginCss.login}>
                     <h1 className={loginCss.h1}>用户登录</h1>
                     <form method="post">
-                    <Input placeholder="用户名" name="username" id="username" value={this.state.username} onChange={this.changeValue} className={loginCss.input1} />
-                    <Input.Password placeholder="密码" name="userPassword" id="userPassword" value={this.state.userPassword} onChange={this.changeValue} className={loginCss.input2} />
+                    <Input placeholder="用户名" name="username" id="username" value={this.state.username} onChange={e=>this.changeValue(e)} className={loginCss.input1} />
+                    <Input.Password placeholder="密码" name="userPassword" id="userPassword" value={this.state.userPassword} onChange={e=>this.changeValue(e)} className={loginCss.input2} />
                         <button className={loginCss.but} onClick={this.login}>登录</button>
                         <a href="./../zhuce" className={loginCss.a1}>没有账号，请注册</a>
                         <a href="./../xiugai" className={loginCss.a3}>忘记密码？</a>

@@ -3,6 +3,38 @@ import { Pagination } from 'antd';
 import { Button } from 'antd';
 
 var peopleCss = require('./people.css');
+var data={
+    "username":this.state.username,
+    
+}
+Axios.post({
+    url:"/user/sczh",
+    data:JSON.stringify(data)
+}).then(result=>{
+    if (result.state!=1) {
+        message.info("成功删除账号")
+    } else if(result==1){
+        message.info("未成功删除账号！")
+        this.props.history.push('/Login')
+    }
+})
+render() 
+    return (
+        <div className={peopleCss.b1}>
+            <div className={peopleCss.B}>
+                <h1 className={peopleCss.h1}>删除账号</h1>
+                <form method="post">
+                <Input placeholder="用户名" name="username" id="username" value={this.state.username} onChange={e=>this.changeValue(e)} className={peopleCss.a1} />
+                <Input placeholder="手机号码" name="userPhone" id="userPhone" value={this.state.userPhone} onChange={e=>this.changeValue(e)} className={peopleCss.a2}/>
+                
+                    <button className={peopleCss.but} onClick={this.xiugai}>确认修改</button>
+                    <a href="./../shuoye" className={peopleCss.a2}>返回首页</a>
+                </form>
+            </div>
+        </div>
+    )
+
+
 
 
 export default class people extends React.Component{

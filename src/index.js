@@ -26,7 +26,7 @@ class Indexpage extends React.Component {
                 <BrowserRouter>
                     <Switch>
                         <Route path="/shuoye/xiaoyuan" component={Shuoye}></Route>
-                        <Route path="/Login" component={login}></Route>
+                        <Route path="/user/Login" component={login}></Route>
                         <Route path="/zhuce" component={Register}></Route>                        
                         <Route path="/xiaoyuan/xiangqin" component={xiangqin1}></Route>
                         <Route path="/gaoshu/xiangqin" component={xiangqin2}></Route>
