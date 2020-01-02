@@ -1,6 +1,7 @@
 import React from 'react';
 import EditorTest from '../../shuoye/bodycomment';
-import { Cascader } from 'antd';
+import { Cascader, message } from 'antd';
+import Axios from 'axios';
 var FaTeCss = require('./fate.css')
 const options = [
     {

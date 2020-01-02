@@ -1,4 +1,6 @@
 import React from 'react';
+import Axios from 'axios';
+import { message } from 'antd';
 var Information = require('./geren.css')
 export default class geren extends React.Component{
     constructor(props) {
